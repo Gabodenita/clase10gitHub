@@ -1,0 +1,255 @@
+*{ margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Courier, monospace;
+}
+
+.logoTemplate{
+    background-color: gray;
+    
+}
+
+h1{ 
+    color: rgb(110, 156, 241);
+    text-align-last: center;
+    font-size: 1rem;
+    font-family: Candara Light;     
+    padding: 20px;
+}
+main{ height: auto;
+}
+
+h2{
+    color: rgb(3, 0, 185);
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.navbar{ 
+    height: 50px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    background-color: rgb(151, 255, 151);
+}
+
+a{
+    text-decoration: none;
+}
+
+.descripcion{
+    display: grid;
+    grid-template-columns: 30% 50%; 
+    grid-template-rows: 23% 23% 23% 23%;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 10px;
+    align-content: center;
+    justify-content: center;
+    height:auto;
+    }
+
+    .imgHome{ 
+        width: 100%;    
+    }   
+   
+    .whatsapp{ color: black;
+        font-size: 20px;
+        background-color: rgba(156, 149, 149, 0.377);
+        display: inline;
+        width: 90px;
+        position: fixed;
+        top: 550px;
+        right: 10px;
+    }
+   
+    .alquiler{
+        display: grid;
+        grid-template-columns: 23% 23% 23% 23%; 
+        grid-template-rows: 50% 50% ;
+        justify-content: center;
+        align-items: center;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+
+    form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 500px;
+    
+}   
+    .comentarios{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        column-gap: 10px;
+    }
+
+    .contactos{
+        font-size: 12px;
+        font-family: serif;  
+        margin: 20px; 
+    }
+
+    .staff{
+    display: grid;
+    grid-template-columns:  15% 35% 15% 35%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    align-items: center;
+    row-gap: 20px;
+    padding: 10px 10px 10px 10px;
+    }
+
+.quienesSomos{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-left: 20%;
+    height : 800px;
+    font-size: 20px;
+    justify-content: space-around;
+    align-content: center;
+}   
+    
+footer{
+    background-color: rgb(187, 185, 185)
+}
+
+.fondo{
+    background-color: rgb(131, 131, 255);
+}
+
+
+/* DISPOSITIVOS PEQUEÑOS */
+
+@media only screen and (max-width: 600px){
+    .fondo{
+        background-image: linear-gradient(rgb(130, 255, 178) , rgb(85, 40, 250)) ;
+    }
+    .navbar{ 
+        display:flex;
+        height: auto; 
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        list-style-type: none;
+        background-color: rgb(151, 255, 151);
+    }
+    .boton{
+        display:flex;
+        width: auto;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        justify-content: center;
+    }
+    h1{ 
+        text-align-last: center;
+        font-size: 2rem;
+        padding: 10px;
+    }
+    .ubicacion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height:auto;
+        padding: 20px;
+    }
+    .maps{
+        width: 30%;
+        height: auto;
+    }
+    .alquiler{
+        display: grid;
+        grid-template-columns: 40% 40%; 
+        grid-template-rows: 20% 20% 20% 20%;
+        justify-content: center;
+        align-items: center;
+        column-gap: 10px;
+        row-gap: 10px;
+    }
+    .staff{
+        grid-template-columns:  25% 55%;
+        grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10%;
+        align-items: center;
+        row-gap: 20px;
+    }
+    .quienesSomos{
+        font-size: 15px;
+        
+    }   
+}
+
+/* DISPOSITIVOS MEDIANOS */
+
+@media only screen and (min-width: 600px){
+    .fondo{
+        background-image: linear-gradient(rgb(255, 205, 130) , rgb(85, 40, 250)) ;
+    }
+
+    h1{ 
+        text-align-last: center;
+        font-size: 3rem;
+        padding: 10px;
+    }    
+    .ubicacion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height:auto;
+        padding: 20px;
+    }
+    .maps{
+        width: 30%;
+        height: auto;
+    }    
+    .alquiler{
+        padding-bottom: 70px;
+    }
+}
+
+/* DISPOSITIVOS DE ESCRITORIOS */
+
+@media only screen and (min-width: 920px){
+    .fondo{
+        background-image: linear-gradient(rgb(255, 130, 130) , rgb(140, 108, 253)) ;
+    }
+
+    h1{ 
+        text-align-last: center;
+        font-size: 4rem;
+        padding: 10px;
+    }    
+    .ubicacion{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height:auto;
+        padding: 20px;
+    }
+    .maps{
+        width: 30%;
+        height: auto;
+    }    
+    .staff{
+        padding: 20px 20px 20px 20px;
+    }
+    .alquiler{
+        height: 600px;
+    }
+}
+
