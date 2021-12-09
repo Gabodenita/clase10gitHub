@@ -194,7 +194,7 @@ footer{
 
 @media only screen and (min-width: 600px){
     .fondo{
-        background-image: linear-gradient(rgb(255, 205, 130) , rgb(85, 40, 250)) ;
+        background-image: linear-gradient(rgb(130, 255, 178) , rgb(85, 40, 250)) ;
     }
 
     h1{ 
@@ -224,7 +224,7 @@ footer{
 
 @media only screen and (min-width: 920px){
     .fondo{
-        background-image: linear-gradient(rgb(255, 130, 130) , rgb(140, 108, 253)) ;
+        background-image: linear-gradient(rgb(130, 255, 178) , rgb(85, 40, 250)) ;
     }
 
     h1{ 
