@@ -9,7 +9,9 @@ body {
 
 .logoTemplate{
     background-color: gray;
-    
+}
+.logo:hover{
+    transform: scale(1.1,1.1)
 }
 
 h1{ 
@@ -67,6 +69,11 @@ a{
         position: fixed;
         top: 550px;
         right: 10px;
+
+    }
+    .whatsapp:hover{
+        background-color: white;
+
     }
    
     .alquiler{
@@ -144,6 +151,12 @@ footer{
         list-style-type: none;
         background-color: rgb(151, 255, 151);
     }
+
+    .logoTemple{
+        display: flex;
+        justify-content: center;
+    }
+
     .boton{
         display:flex;
         width: auto;
