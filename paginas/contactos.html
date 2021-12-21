@@ -4,18 +4,23 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!-- link CSS -->
-        <link rel="stylesheet" href="../css/estilo.css">
-
+        
         <!-- link fuentes google -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Praise&family=Roboto:wght@500&display=swap" rel="stylesheet">
-
+        
         <!-- Favicon -->
         <link rel="shortcut icon" href="../media/iconotemple.ico" type="image/x-icon">
-
+        
+        <!-- link Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
+        <!-- link CSS -->
+        <link rel="stylesheet" href="../css/estilo.css">
+        
+            
+        
         <!-- titulo-->
         <title>Contactos</title>
     </head>
@@ -23,57 +28,91 @@
     <body>
         <header>
 
-            <!-- logotipo-->
-            <a class="logoTemple"   href="../index.html"> 
-                <img src="../media/logotemple1.jpg" alt="logo temple" >
-            </a>                   
-
-            <!-- menu de navegacion-->
-            <nav>            
-                <ul class="navbar">    
-                     <li class= "boton"><a href="../index.html"> Home</a></li>
-                     <li class= "boton"><a href="alquilerdeconsultorios.html"> Alquiler de Consultorios</a></li>
-                     <li class= "boton"><a href="contactos.html"> Contactos</a></li>
-                     <li class= "boton"><a href="nuestrostaff.html"> Nuestro Staff</a></li>       
-                     <li class= "boton"><a href="quienessomos.html"> Quienes Somos</a></li>
-                </ul>
+            <!-- Navegador de bootstrap-->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="../index.html"><img src="../media/logotemple1.jpg" alt="logo temple"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="alquilerdeconsultorios.html">Alquiler de Consultorios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="nuestrostaff.html">Nuestro Staff</a>
+                      </li>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="quienessomos.html">Quienes Somos</a>
+                    </li>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="contactos.html">Contacto</a>
+                  </li>
+                    </ul>
+                  </div>
+                 </div>
             </nav>
+
             <h1>temple centro médico</h1>    
         </header>
 
         <!-- main -->
        <main class="fondo">
             <H2>CONTACTOS</H2>
-            <p class="contactos">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis, nemo accusantium odit fugiat dolorum dolore voluptate earum ratione soluta quae, fuga ea tenetur ipsum sit! Nemo, eaque? Pariatur, adipisci id?</p>
-            
-            <!-- formulario para contacots -->
-            <form action="formulario">
-                <div>   
-                    <label for="nombre"> Nombre</label>
-                    <input type="text" placeholder=" Ingrese su nombre" id="nombre">
-                </div>   
-                <div>
-                    <label for="emails"> Emails </label>
-                    <input type="text" id="emails" placeholder=" Ingrese@emails.com"> 
-                </div>
-                <div class="comentarios">
-                    <label for="comentario"> Comentrarios</label>
-                    <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
-                </div>
 
-                <div>
-                    <input type="submit" value=" Enviar">
-                    <input type="reset" value="Limpiar formulario"> 
+            <!--Formulario Bootstrap -->
+            <div class="container-xl formulario">
+              <form>
+                <div class="mb-3">
+                  <label for="nombreApellido" class="form-label">Su Nombre y Apellido</label>
+                  <input type="text" class="form-control" id="nombreApellido">   
                 </div> 
-            </form>
+                <div class="mb-3">
+                  <label for="direccionMail" class="form-label">Dirección de Email</label>
+                  <input type="email" class="form-control" id="direccionMail" aria-describedby="ayudaMail">
+                  <div id="ayudaMail" class="form-text">Nunca compartiremos su correo electrónico.</div>
+                </div>
+                <button type="submit" class="btn btn-primary">Envair</button>
+                <div class="comentarios">
+                  <label for="comentario"> Comentrarios</label>
+                  <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+                </div>
+              </form>
+            </div>
             
-        </main>    
-       
-        <!-- footer -->
-        <footer>
-            <h3>Nuestras redes sociales</h3>
-            <h4>by Gabriel Denita</h4>
-        </footer>
-        
-    </body>
-</html>
+            <!-- atajo whatsapp -->            
+            <div > 
+               <a href="https://wa.me/5492613731790" ><img src="../media/whatsapp-flag-iconsl.png" alt="link to whatsapp"  class= "whatsapp"> </a> 
+            </div> 
+          </main>    
+          
+          
+          <!-- footer -->
+          <footer>
+
+            <!-- Navegador del Footer-->
+            <ul  class="navfooter">
+              <li><a class="tex-navfooter-activo" href="../index.html"> Home</a></li>
+              <li><a class="tex-navfooter" href="alquilerdeconsultorios.html"> Alquiler de consultoios</a></li>
+              <li><a class="tex-navfooter" href="contactos.html"> Contactos</a></li>
+              <li><a class="tex-navfooter" href="nuestrostaff.html"> Nuesto staff</a></li>
+              <li><a class="tex-navfooter" href="quienessomos.html"> Quienes somos</a></li>
+            </ul>
+           
+            <!-- Teléfonos -->
+            <div class="redesSociales">
+              <div><p>Teléfono fijo: 498-6033</p></div>
+              <div><img  src="../media/logotemple3.png" alt="logotemple3"></div>
+              <div><p>Celular: 261-373-1790</p></div>
+            </div>
+          </footer>
+            <!-- Script de Bootstrap -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        </body>
+        </html>

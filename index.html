@@ -1,76 +1,154 @@
+<!-- Desafío entregable Bootstrap -->
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <!-- link CSS -->
-        <link rel="stylesheet" href="css/estilo.css">
-        
-        <!-- link fuentes google -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Praise&family=Roboto:wght@500&display=swap" rel="stylesheet">
-        
-        <!-- Favicon -->
-        <link rel="shortcut icon" href="media/iconotemple.ico" type="image/x-icon">
-        
-        <!-- titulo-->
-        <title>Home</title>
-    </head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           
+    <!-- link fuentes google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Praise&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    
+    <!-- link Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- link CSS -->
+    <link rel="stylesheet" href="css/estilo.css"> 
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="media/iconotemple.ico" type="image/x-icon">
+    
+    
+    <!-- titulo-->
+    <title>Home</title>
+  </head>
 
     <body >
         <header>
-            
-            <!-- logotipo-->
-            <a class="logoTemple"   href="index.html"> 
-                <img class="logo" src="media/logotemple1.jpg" alt="logo temple" >
-            </a>                   
-        
-            <!-- menu de navegacion-->
-            <nav>            
-                <ul class="navbar">    
-                    <li class= "boton"><a  href="index.html"> Home</a></li>
-                    <li class= "boton"><a  href="paginas/alquilerdeconsultorios.html"> Alquiler de Consultorios</a></li>
-                    <li class= "boton"><a  href="paginas/contactos.html"> Contactos</a></li>
-                    <li class= "boton"><a  href="paginas/nuestrostaff.html"> Nuestro Staff</a></li>       
-                    <li class= "boton"><a  href="paginas/quienessomos.html"> Quienes Somos</a></li>
-                </ul>
+            <!-- Navegador de bootstrap-->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html"><img src="media/logotemple1.jpg" alt="logo temple"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="paginas/alquilerdeconsultorios.html">Alquiler de Consultorios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="paginas/nuestrostaff.html">Nuestro Staff</a>
+                      </li>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="paginas/quienessomos.html">Quienes Somos</a>
+                    </li>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="paginas/contactos.html">Contacto</a>
+                  </li>
+                    </ul>
+                  </div>
+                 </div>
             </nav>
+            
             <h1>temple centro médico</h1>    
         </header>
         
         <!-- descripcion del lugar -->
         <main class="fondo">
-            <h2>HOME</h2>
-            <div class="descripcion">
-                <div><img class="imgHome" src="media/frente.jpg" alt="Entrada Temple"></div>
-                <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime suscipit non sunt debitis. Ipsa tempore dignissimos iusto facere tempora. Rerum consectetur veritatis ipsum ducimus cum nam. Tenetur perspiciatis architecto aliquid!</p></div>
-                <div><img class="imgHome" src="media/rampa.jpg" alt="Rampa"></div>
-                <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime suscipit non sunt debitis. Ipsa tempore dignissimos iusto facere tempora. Rerum consectetur veritatis ipsum ducimus cum nam. Tenetur perspiciatis architecto aliquid!</p></div>
-                <div><img class="imgHome" src="media/saladeespera.jpg" alt="Sala De Espera"></div>
-                <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime suscipit non sunt debitis. Ipsa tempore dignissimos iusto facere tempora. Rerum consectetur veritatis ipsum ducimus cum nam. Tenetur perspiciatis architecto aliquid!</p></div>
-                <div><img class="imgHome" src="media/estacionamiento.jpg" alt="Estacionamineto"></div>
-                <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime suscipit non sunt debitis. Ipsa tempore dignissimos iusto facere tempora. Rerum consectetur veritatis ipsum ducimus cum nam. Tenetur perspiciatis architecto aliquid!</p></div>
-            </div>    
+        
+          <!--Carousel With captions  -->
+          <div class="container-sm">
+            <div id="subtitulos" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#subtitulos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#subtitulos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#subtitulos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#subtitulos" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="media/imagenes carousel/frente.jpg" class="d-block w-100" alt="Entrada">
+                  <div class="carousel-caption d-none d-md-block">
+                      <h5 class="carru">Acceso</h5>
+                      <p class="carru">Contamos con rampas para discapacitados </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="media/imagenes carousel/estacionamiento.jpg" class="d-block w-100" alt="Etacionamiento">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="carru">Estacionamineto</h5>
+                    <p class="carru">Podes dejar tu auto en nuestros estacionamiento propio</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="media/imagenes carousel/Panoramauno.jpg" class="d-block w-100" alt="Sala de espera">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="carru">Sala de espera</h5>
+                    <p class="carru">Cumplimos las normas CO-VID</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="media/imagenes carousel/odonto.jpg" class="d-block w-100" alt="Odontología">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5 class="carru">Consultorio de Odontogía</h5>
+                    <p class="carru">La mejor atención y la más comprometida</p>
+                  </div>
+                </div>              
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#subtitulos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#subtitulos" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
 
-            <!-- ubicacion Google maps -->
-            <div class="ubicacion">
-                <h3>Nuestras ubicacion</h3>
-                <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1182.633513564252!2d-68.90802150245626!3d-33.03032257344356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1636415756402!5m2!1ses!2sar" ></iframe>  
-            </div>
-            <!-- atajo whatsapp -->            
-            <div > 
-                <a class= "whatsapp"   href="https://wa.me/5492613731790"> Whatsapp</a> 
-            </div>
+          <!-- ubicacion Google maps -->
+          <div class="ubicacion">
+            <h3>Nuestras ubicacion</h3>
+            <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1182.633513564252!2d-68.90802150245626!3d-33.03032257344356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1636415756402!5m2!1ses!2sar" ></iframe>  
+          </div>
+          <!-- atajo whatsapp -->            
+          <div > 
+              <a href="https://wa.me/5492613731790" ><img src="media/whatsapp-flag-iconsl.png" alt="link to whatsapp"  class= "whatsapp"> </a> 
+          </div>
         </main>
         
         <!-- footer -->
         <footer>
-            <h3>Nuestras redes sociales</h3>
-            <h4>by Gabriel Denita</h4>
+
+          <!-- Navegador del Footer-->
+            <ul  class="navfooter">
+              <li><a class="tex-navfooter-activo" href="index.html"> Home</a></li>
+              <li><a class="tex-navfooter" href="paginas/alquilerdeconsultorios.html"> Alquiler de consultoios</a></li>
+              <li><a class="tex-navfooter" href="paginas/contactos.html"> Contactos</a></li>
+              <li><a class="tex-navfooter" href="paginas/nuestrostaff.html"> Nuesto staff</a></li>
+              <li><a class="tex-navfooter" href="paginas/quienessomos.html"> Quienes somos</a></li>
+            </ul>
+            
+            <!-- Teléfonos -->
+            <div class="redesSociales">
+              <div><p>Teléfono fijo: 498-6033</p></div>
+              <div><img  src="media/logotemple3.png" alt="logotemple3"></div>
+              <div><p>Celular: 261-373-1790</p></div>
+            </div>
+            
+            <div><p>Creado por Gabriel Denita</p></div>
         </footer>
-        
+
+        <!-- Script de Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
     </body>
 </html>

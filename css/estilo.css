@@ -7,19 +7,12 @@ body {
     font-family: 'Roboto', Courier, monospace;
 }
 
-.logoTemplate{
-    background-color: gray;
-}
-.logo:hover{
-    transform: scale(1.1,1.1)
-}
-
 h1{ 
     color: rgb(110, 156, 241);
     text-align-last: center;
     font-size: 1rem;
     font-family: Candara Light;     
-    padding: 20px;
+    
 }
 main{ height: auto;
 }
@@ -32,19 +25,11 @@ h2{
     padding-top: 30px;
 }
 
-.navbar{ 
-    height: 50px;
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style-type: none;
-    background-color: rgb(151, 255, 151);
+.carru{
+    color: black;
+    font-weight: 700;
+    font-size: larger;
 }
-
-a{
-    text-decoration: none;
-}
-
 .descripcion{
     display: grid;
     grid-template-columns: 30% 50%; 
@@ -61,19 +46,12 @@ a{
         width: 100%;    
     }   
    
-    .whatsapp{ color: black;
-        font-size: 20px;
-        background-color: rgba(156, 149, 149, 0.377);
+    .whatsapp{ 
         display: inline;
-        width: 90px;
+        width: 50px;
         position: fixed;
         top: 550px;
         right: 10px;
-
-    }
-    .whatsapp:hover{
-        background-color: white;
-
     }
    
     .alquiler{
@@ -101,11 +79,7 @@ a{
         column-gap: 10px;
     }
 
-    .contactos{
-        font-size: 12px;
-        font-family: serif;  
-        margin: 20px; 
-    }
+    
 
     .staff{
     display: grid;
@@ -128,21 +102,53 @@ a{
 }   
     
 footer{
-    background-color: rgb(187, 185, 185)
+    background-color: rgb(139, 108, 250);
+}
+
+.navfooter{
+    display : flex;
+    flex-direction: row;
+    justify-content:center;
+    list-style-type: none;
+    padding-top: 20px;
+
+} 
+
+.tex-navfooter{
+    text-decoration: none;
+    font-size: 12px;
+    color: black;
+    padding: 10px 10px 10px 10px;
+
+} 
+.tex-navfooter-activo{
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    padding: 10px 10px 10px 10px;
+}
+
+.redesSociales{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+    align-content: center;
+    justify-content: center;
+    
 }
 
 .fondo{
-    background-color: rgb(131, 131, 255);
+    background-image: linear-gradient(white ,rgb(130, 255, 178) , rgb(139, 108, 250)) ;
 }
-
+a{
+    text-decoration: none;
+}
 
 /* DISPOSITIVOS PEQUEÑOS */
 
 @media only screen and (max-width: 600px){
-    .fondo{
-        background-image: linear-gradient(rgb(130, 255, 178) , rgb(85, 40, 250)) ;
-    }
-    .navbar{ 
+    .navbar1{ 
         display:flex;
         height: auto; 
         flex-direction: column;
@@ -151,12 +157,6 @@ footer{
         list-style-type: none;
         background-color: rgb(151, 255, 151);
     }
-
-    .logoTemple{
-        display: flex;
-        justify-content: center;
-    }
-
     .boton{
         display:flex;
         width: auto;
@@ -199,17 +199,19 @@ footer{
     }
     .quienesSomos{
         font-size: 15px;
-        
-    }   
+    }
+    
+    .navfooter{
+        display : flex;
+        flex-direction: column;
+        align-items: center;
+    }    
 }
 
 /* DISPOSITIVOS MEDIANOS */
 
 @media only screen and (min-width: 600px){
-    .fondo{
-        background-image: linear-gradient(rgb(130, 255, 178) , rgb(85, 40, 250)) ;
-    }
-
+   
     h1{ 
         text-align-last: center;
         font-size: 3rem;
@@ -236,10 +238,7 @@ footer{
 /* DISPOSITIVOS DE ESCRITORIOS */
 
 @media only screen and (min-width: 920px){
-    .fondo{
-        background-image: linear-gradient(rgb(130, 255, 178) , rgb(85, 40, 250)) ;
-    }
-
+   
     h1{ 
         text-align-last: center;
         font-size: 4rem;
