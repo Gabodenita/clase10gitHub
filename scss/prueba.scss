@@ -1,0 +1,70 @@
+$colorBackgroundUno: white;
+$colorBackgroundDos: rgb(130, 255, 178);
+$colorBackgroundTres: rgb(139, 108, 250);
+$colorTituloUno: rgb(243, 10, 10);
+$colorBackgroundFooter: rgb(139, 108, 250);
+
+.fondo{
+    background-image: linear-gradient($colorBackgroundUno , $colorBackgroundDos , $colorBackgroundTres) ;
+}
+h1{
+    color: $colorTituloUno;
+    text-align-last: center;
+    font-size: 2rem;
+    padding: 10px;
+    background-color: $colorBackgroundUno ;
+}
+header{
+    background-color: $colorBackgroundUno;
+}
+.navfooter{
+    display : flex;
+    flex-direction: row;
+    justify-content:center;
+    list-style-type: none;
+    padding-top: 20px;
+    &-text{
+        text-decoration: none;
+        font-size: 12px;
+        color: black;
+        padding: 10px 10px 10px 10px;
+        &-activo{
+            font-size: 15px;  
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+.whatsapp{ 
+    display: inline;
+    width: 50px;
+    position: fixed;
+    top: 550px;
+    right: 10px;
+}    
+.ubicacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:auto;
+    padding: 20px;
+}    
+
+footer{
+    background-color: $colorBackgroundFooter;
+}
+.redesSociales{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+    align-content: center;
+    justify-content: center;
+}
+
+
+// .fondo{
+//     background-image: linear-gradient(white ,rgb(130, 255, 178) , rgb(139, 108, 250)) ;
+// }
