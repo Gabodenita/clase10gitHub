@@ -49,165 +49,79 @@ footer {
 .redesSociales {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
-  padding: 10px 10px 10px 10px;
   align-content: center;
-  justify-content: center; 
-}
-.imgHome{ 
-  width: 100%;    
-}   
-.alquiler{
+  width: auto;
+  height: auto;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px; }
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 500px; }
+
+.comentarios {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+  column-gap: 10px; }
+
+.quienesSomos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: none;
+  width: 60%;
+  height: auto;
+  padding-left: 0;
+  padding-top: 20px;
+  padding-right: 0;
+  padding-bottom: 0;
+  margin-left: 20%;
+  font-size: 20px;
+  align-content: center; }
+
+.navfooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: none; }
+
+.staff {
   display: grid;
-  grid-template-columns: 23% 23% 23% 23%; 
-  grid-template-rows: 50% 50% ;
+  grid-template-columns: 20% 35% 20% 35%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  align-items: center;
+  row-gap: 20px;
+  column-gap: 20px;
+  padding: 20px 20px 20px 20px; }
+
+.alquiler {
+  height: auto; }
+
+.alquiler {
+  display: grid;
+  grid-template-columns: 23% 23% 23% 23%;
+  grid-template-rows: 50% 50%;
   justify-content: center;
   align-items: center;
   column-gap: 10px;
   row-gap: 10px;
-}
+  height: auto; }
 
-.quienesSomos{
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-  margin-left: 20%;
-  height : 800px;
-  font-size: 20px;
-  justify-content: space-around;
-  align-content: center;
-}   
-
-
-/* DISPOSITIVOS PEQUEÑOS */
-
-@media only screen and (max-width: 600px){
-  .navbar1{ 
-      display:flex;
-      height: auto; 
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      list-style-type: none;
-      background-color: rgb(151, 255, 151);
-  }
-  .boton{
-      display:flex;
-      width: auto;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      justify-content: center;
-  }
-  h1{ 
-      text-align-last: center;
-      font-size: 2rem;
-      padding: 10px;
-  }
-  .ubicacion{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height:auto;
-      padding: 20px;
-  }
-  .maps{
-      width: 30%;
-      height: auto;
-  }
-  .alquiler{
-      display: grid;
-      grid-template-columns: 40% 40%; 
-      grid-template-rows: 20% 20% 20% 20%;
-      justify-content: center;
-      align-items: center;
-      column-gap: 10px;
-      row-gap: 10px;
-  }
-  .staff{
-      grid-template-columns:  25% 55%;
-      grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10%;
-      align-items: center;
-      row-gap: 20px;
-  }
-  .quienesSomos{
-      font-size: 15px;
-  }
-  
-  .navfooter{
-      display : flex;
-      flex-direction: column;
-      align-items: center;
-  }    
-  }
-  
-  /* DISPOSITIVOS MEDIANOS */
-  
-  @media only screen and (min-width: 600px){
-  
-  h1{ 
-      text-align-last: center;
-      font-size: 3rem;
-      padding: 10px;
-  }    
-  .ubicacion{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height:auto;
-      padding: 20px;
-  }
-  .maps{
-      width: 30%;
-      height: auto;
-  }    
-  .alquiler{
-      padding-bottom: 70px;
-  }
-  .staff{
-      grid-template-columns:  25% 55%;
-      grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10%;
-      align-items: center;
-      row-gap: 20px;
-  }
-  }
-  
-  /* DISPOSITIVOS DE ESCRITORIOS */
-  
-  @media only screen and (min-width: 920px){
-  
-  h1{ 
-      text-align-last: center;
-      font-size: 4rem;
-      padding: 10px;
-  }    
-  .ubicacion{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height:auto;
-      padding: 20px;
-  }
-  .maps{
-      width: 30%;
-      height: auto;
-  }    
-  .staff{
-      display: grid;
-      grid-template-columns:  15% 35% 15% 35%;
-      grid-template-rows: 20% 20% 20% 20% 20%;
-      align-items: center;
-      row-gap: 20px;
-      column-gap: 20px;
-      padding: 20px 20px 20px 20px;
-  }
-  .alquiler{
-      height: 600px;
-  }
-  }
-  
+@media only screen and (max-width: 600px) {
+  .alquiler {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 20% 20% 20% 20%;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 10px; } }
