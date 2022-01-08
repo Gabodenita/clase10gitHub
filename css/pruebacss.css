@@ -33,6 +33,22 @@ header {
   position: fixed;
   top: 550px;
   right: 10px; }
+  
+.transporteD {
+  display: inline;
+  width: 50px;
+  position: fixed;
+  top: 350px;
+  right: 10px;
+  transition:3s; }
+
+  .transporteI {
+display: inline;
+width: 50px;
+position: fixed;
+top: 350px;
+left: 10px; }
+
 
 .ubicacion {
   display: flex;
@@ -42,6 +58,8 @@ header {
   width: 100%;
   height: auto;
   padding: 20px; }
+
+
 
 footer {
   background-color: #8b6cfa; }
@@ -88,6 +106,14 @@ footer {
   font-size: 20px;
   align-content: center; }
 
+.imgHome:hover{
+    box-shadow: 1px 2px 3px 4px rgba(20, 20, 20, 0.596);
+    transition: .3s; } 
+.imgHome {
+  height: auto;
+  width: 100%;
+}
+
 .navfooter {
   display: flex;
   flex-direction: row;
@@ -125,3 +151,9 @@ footer {
     align-items: center;
     column-gap: 10px;
     row-gap: 10px; } }
+  
+    @media only screen and (min-width: 600px) {
+  .transporteD {
+    display: none; }
+  .transporteI {
+    display: none; }  }
