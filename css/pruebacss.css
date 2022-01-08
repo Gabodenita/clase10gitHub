@@ -39,8 +39,7 @@ header {
   width: 50px;
   position: fixed;
   top: 350px;
-  right: 10px;
-  transition:3s; }
+  right: 10px; }
 
   .transporteI {
 display: inline;
@@ -150,7 +149,10 @@ footer {
     justify-content: center;
     align-items: center;
     column-gap: 10px;
-    row-gap: 10px; } }
+    row-gap: 10px; } 
+  .whatsapp {
+    top: 300px
+  } }
   
     @media only screen and (min-width: 600px) {
   .transporteD {
