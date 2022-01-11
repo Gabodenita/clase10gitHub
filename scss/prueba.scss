@@ -1,19 +1,18 @@
 $colorBackgroundUno: white;
 $colorBackgroundDos: rgb(130, 255, 178);
 $colorBackgroundTres: rgb(139, 108, 250);
-$colorTituloUno: rgb(243, 10, 10);
+$colorTituloUno: rgb(56, 24, 168);
 $colorBackgroundFooter: rgb(139, 108, 250);
 
 .fondo{
     background-image: linear-gradient($colorBackgroundUno , $colorBackgroundDos , $colorBackgroundTres) ;
 }
-h1{
-    color: $colorTituloUno;
-    text-align-last: center;
-    font-size: 2rem;
-    padding: 10px;
-    background-color: $colorBackgroundUno ;
+
+p{
+    padding-left: 20px;
+    padding-right: 20px;
 }
+
 header{
     background-color: $colorBackgroundUno;
 }
@@ -22,7 +21,7 @@ header{
     flex-direction: row;
     justify-content:center;
     list-style-type: none;
-    padding-top: 20px;
+    padding-top: 60px;
     &-text{
         text-decoration: none;
         font-size: 12px;
@@ -35,20 +34,37 @@ header{
         }
     }
 }
+h1 {
+    color: $colorTituloUno;
+    text-align-last: center;
+    font-size: 2.8rem;
+    padding: 10px;
+    background-color: white; }
+
+h2 {
+    color: $colorTituloUno;
+    text-align-last: center;
+    font-size: 2rem;
+    padding: 10px;}
+    
+  
 .whatsapp{ 
     display: inline;
     width: 50px;
     position: fixed;
     top: 550px;
     right: 10px;
-}    
+}  
+
+
+
 .ubicacion{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height:auto;
+    width: auto ;
+    height:400px;
     padding: 20px;
 }    
 
@@ -79,7 +95,9 @@ footer{
     align-content: center;
     @include medidas(auto, auto, 10px, 10px,10px, 10px);
 }
-
+.navbar-nav{
+    padding-left: 100px
+}
 .formulario{
     @include grilla(flex, column, space-around, center);
     height: 500px;
@@ -88,6 +106,13 @@ footer{
 .comentarios{
     @include grilla(flex, column, none, center);
     column-gap: 10px;
+}
+
+
+.imgHome{
+    box-shadow: 1px 2px 3px 4px rgba(20, 20, 20, 0.596);
+    height: auto;
+    width: 100%;
 }
 
 .quienesSomos{
@@ -103,21 +128,18 @@ footer{
 }
 .staff{
     display: grid;
-    grid-template-columns:  20% 35% 20% 35%;
+    grid-template-columns:  25% 20% 25% 20%;
     grid-template-rows: 20% 20% 20% 20% 20%;
     align-items: center;
     row-gap: 20px;
     column-gap: 20px;
     padding: 20px 20px 20px 20px;
 }
-.alquiler{
-    height: auto;
-}
 
 .alquiler{
     display: grid;
-    grid-template-columns: 23% 23% 23% 23%; 
-    grid-template-rows: 50% 50% ;
+    grid-template-columns: 40% 40% ; 
+    grid-template-rows: 25% 25% 25% 25%;
     justify-content: center;
     align-items: center;
     column-gap: 10px;
@@ -125,13 +147,45 @@ footer{
     height: auto;
 }    
 @media only screen and (max-width: 600px){
+    .navfooter{
+        display: none;
+    }
+    .transporteD {
+        display: inline;
+        width: 50px;
+        position: fixed;
+        top: 350px;
+        right: 10px; }
+      
+    .transporteI {
+      display: inline;
+      width: 50px;
+      position: fixed;
+      top: 350px;
+      left: 10px; }
+   
     .alquiler{
         display: grid;
-        grid-template-columns: 40% 40%; 
-        grid-template-rows: 20% 20% 20% 20%;
+        grid-template-columns: 80%; 
+        grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10%;
         justify-content: center;
         align-items: center;
         column-gap: 10px;
         row-gap: 10px;
     }
+    .whatsapp{
+        top: 450px;
+    }
+
+    .staff{ 
+        @include grilla(flex, column, center, center)
+    }
+}
+
+@media only screen and (min-width: 600px) {
+        .transporteD {
+          display: none; }
+        .transporteI {
+          display: none; }  
+
 }
