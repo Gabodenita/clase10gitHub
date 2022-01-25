@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        
         <!-- link fuentes google -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,7 @@
         <!-- SEO -->
         <meta name="description" content="Nuesto objetivo es brindarles a nuestros pacientes calidad profesional, pero sobre todo calidez en el trato">
         <meta name="keywords" content="TEMPLE, MEDICINA, FAMILIA, PAMI, KINESIOLOGIA, LUJAN, CUYO, CENTRO, MEDICO, VISTALBA, ODONTOLOGIA, PSICOLOGIA, RAMPA, DISCAPACITADOS, ESTACIONAMIENTO, SEGURIDAD, COVID">
-        <meta name="author" content="Gabriel Denita">
+        <meta name="author" content="Gabriel Denita">        
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="../media/iconotemple.ico" type="image/x-icon">
@@ -23,17 +23,17 @@
         
         <!-- link CSS -->
         <link rel="stylesheet" href="../css/temple.css">
-        
-        
+
         <!-- titulo-->
-        <title>Alquiler de consultorios</title>
-      </head>
-      
+        <title>contacto</title>
+    </head>
+
     <body>
-      <header>
+        <header>
+
             <!-- Navegador de bootstrap-->
             <nav class="navbar navbar-expand-lg navbar-light">
-              <div class="container-fluid">
+                <div class="container-fluid">
                   <a class="navbar-brand" href="../index.html"><img src="../media/logotemple1.jpg" alt="logo temple"></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -44,7 +44,7 @@
                         <a class="nav-link" aria-current="page" href="../index.html">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link active" href="alquilerdeconsultorios.html">Alquiler de Consultorios</a>
+                        <a class="nav-link" href="alquilerdeconsultorios.html">Alquiler de Consultorios</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link" href="nuestrostaff.html">Nuestro Staff</a>
@@ -55,51 +55,60 @@
                     </li>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Contacto</a>
+                    <a class="nav-link active" href="contacto.html">Contacto</a>
                   </li>
-                </ul>
-              </div>
-            </div>
+                    </ul>
+                  </div>
+                 </div>
             </nav>
-          </header>
-        
+        </header>
+
         <!-- main -->
-        <main class="fondo">
+       <main class="fondo">
+            <h2>CONTACTO</h2>
+
+            <!--Formulario Bootstrap -->
+            <div class="container-xl formulario">
+              <form>
+                <div class="mb-3 form-centrado">
+                  <label for="nombreApellido" class="form-label">Nombre y Apellido </label>
+                  <input type="text" class="form-control" id="nombreApellido">   
+                </div> 
+                <div class="mb-3 form-centrado">
+                  <label for="direccionMail" class="form-label">Dirección de Email</label>
+                  <input type="email" class="form-control" id="direccionMail" aria-describedby="ayudaMail">
+                  <div id="ayudaMail" class="form-text">Nunca compartiremos su correo electrónico.</div>
+                </div>
+                <div class="comentarios">
+                  <label class="form-label" for="comentario"> Comentrarios</label>
+                  <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+                  <button type="enviar" class="btn btn-primary enviar comentario-btn">Enviar</button>
+                </div>
+                </form>
+            </div>
             
-            <!-- nombre de la pagina -->
-            <h2>ALQUILER DE CONSULTORIOS</h2>
-            
-            <!-- descripcion del lugar -->
-            <div class="alquiler">
-              <img class="imgHome" src="../media/consultoriouno.jpg" alt="Entrada Temple">
-              <p>Somos la mejor opción para le profesional de la medicina, nuestros consultorios son los de mayor confort en zona y nos esforzamos día a día para dale la mayor contención tanto a los profesionales cómo a los pacientes.</p>
-              <p>Contamos con los siguientes servicios: Aire acondicionado, Internet wi-fi de alta velocidad, servicio de limpieza, cocina totalmente equipada</p>
-              <img class="imgHome" src="../media/consultoriodos.jpg" alt="Rampa">
-              <img class="imgHome" src="../media/estacionamientoprofesionales.jpg" alt="Sala De Espera">
-              <p>Sala de espera confortablemente calefaccionada y refrigerada, estacionamiento exclusivo para el personal, dos baños, uno adaptado para discapacitados.</p>
-              <p>Los consultorios se encuentran habilitados tanto por el Gobierno de la Provincia de Mendoza (Ministerio de Salud Pública) como por la Municipalidad de Lujan de Cuyo a fin de que cada uno de nuestros médicos tenga la tranquilidad de estar en un lugar con la seriedad y el compromiso que ellos necesitan</p>
-              <img class="imgHome" src="../media/recepcion.jpg" alt="Estacionamineto">
-            </div>  
-                             
             <!-- atajo whatsapp -->            
-            <a href="https://wa.me/5492613731790" ><img src="../media/whatsapp-flag-iconsl.png" alt="link to whatsapp"  class= "whatsapp"> </a> 
-           
+            <div > 
+               <a href="https://wa.me/5492613731790" ><img src="../media/whatsapp-flag-iconsl.png" alt="link to whatsapp"  class= "whatsapp"> </a> 
+            </div> 
+
             <!-- flechas para desplazarse en el modo mobile -->
-            <a href="nuestrostaff.html" ><img src="../media/flecha derecha.png" alt="página siguiente"  class= "transporteD"> </a> 
-            <a href="../index.html" ><img src="../media/flecha izquierda.png" alt="página anterior"  class= "transporteI"> </a> 
-        
-          </main>
-    
-        <!-- footer -->
-        <footer>
+            <a href="../index.html" ><img src="../media/flecha derecha.png" alt="página siguiente"  class= "transporteD"> </a> 
+            <a href="quienessomos.html" ><img src="../media/flecha izquierda.png" alt="página anterior"  class= "transporteI"> </a> 
+
+          </main>    
+          
+          
+          <!-- footer -->
+          <footer>
 
             <!-- Navegador del Footer-->
             <ul  class="navfooter">
               <li><a class="navfooter-text" href="../index.html"> Home</a></li>
-              <li><a class="navfooter-text-activo" href="alquilerdeconsultorios.html"> Alquiler de consultorios</a></li>
+              <li><a class="navfooter-text" href="alquilerdeconsultorios.html"> Alquiler de consultorios</a></li>
               <li><a class="navfooter-text" href="nuestrostaff.html"> Nuesto staff</a></li>
               <li><a class="navfooter-text" href="quienessomos.html"> Quienes somos</a></li>
-              <li><a class="navfooter-text" href="contacto.html"> Contacto</a></li>
+              <li><a class="navfooter-text-activo" href="contacto.html"> Contacto</a></li>
             </ul>
            
             <!-- Teléfonos -->
@@ -108,12 +117,8 @@
               <img  src="../media/logotemple3.png" alt="logotemple3">
               <a class="telefono" href="tel:+5492613731790">Celular: 261-373-1790</a> 
             </div>
-          
-          <p>Creado por Gabriel Denita</p>
-          
-        </footer>
-        
-        <!-- Script de Bootstrap -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
-    </body>
-    </html>
+          </footer>
+            <!-- Script de Bootstrap -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        </body>
+        </html>
