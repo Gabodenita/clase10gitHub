@@ -29,20 +29,13 @@ header{
         font-size: 12px;
         color: black;
         padding: 10px 10px 10px 10px;
-        &-activo{
+        &--activo{
             font-size: 15px;  
             text-decoration: none;
             color: black;
         }
     }
 }
-h1 {
-    color: $colorTituloUno;
-    text-align-last: center;
-    font-size: 2.8rem;
-    padding: 10px;
-    background-color: white; }
-
 h2 {
     color: $colorTituloUno;
     text-align-last: center;
@@ -119,15 +112,18 @@ footer{
 .imgQuienesSomos{
     box-shadow: 1px 2px 3px 4px rgba(20, 20, 20, 0.596);
     height: auto;
-    width: 100%;
     margin: 20px ;
 }
 .quienesSomos{
-    @include grilla(flex, column, space-around, none);
-    @include medidas (60%, auto, 0,20px,0,0);
-    margin-left: 20%;
+    @include grilla(flex, column, center, none);
+    @include medidas (70%, auto, 0,20px,0,0);
+    margin-left: 15%;
     font-size: 20px;
     align-content: center;
+}
+h3{
+    text-align: center;
+    margin: 20px;
 }
 .navfooter{
     @include grilla(flex, row, center, none);
@@ -157,26 +153,34 @@ footer{
     .navfooter{
         display: none;
     }
+    h2 {
+        color: $colorTituloUno;
+        font-size: 16px;
+    }
+    p{
+        font-size: 12px
+    }
+    .imgHome{
+        height: auto;
+        width: 80%;
+    }
+    .valores{
+        font-size:12px;
+    }
     .transporteD {
         display: inline;
         width: 50px;
         position: fixed;
-        top: 350px;
+        top: 380px;
         right: 10px; }
     .transporteI {
       display: inline;
       width: 50px;
       position: fixed;
-      top: 350px;
+      top: 380px;
       left: 10px; }
     .alquiler{
-        display: grid;
-        grid-template-columns: 80%; 
-        grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10%;
-        justify-content: center;
-        align-items: center;
-        column-gap: 10px;
-        row-gap: 10px;}
+        @include grilla(flex, column, center, center)}
     .whatsapp{
         top: 490px;}
     .staff{ 
