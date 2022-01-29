@@ -104,13 +104,14 @@ footer {
 .imgQuienesSomos {
   box-shadow: 1px 2px 3px 4px rgba(20, 20, 20, 0.596);
   height: auto;
-  margin: 20px; }
+  margin: 20px;
+  width: 70%; }
 
 .quienesSomos {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: none;
+  align-items: center;
   width: 70%;
   height: auto;
   padding-left: 0;
